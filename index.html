@@ -7,10 +7,11 @@
 <body class="page">
 <header class="page__header base-header">
   <a class="base-header__logo logo">
-    <img class="logo__image" src="#" alt="#">
+    <img class="logo__image" src="img/logo.png" alt="логотип техномарта" width="110" height="18">
   </a>
   <form class="base-header__search search" method="get" action="#">
-    <input class="search__input" type="text" placeholder="Поиск:">
+    <input class="search__input" type="text" id="search-input-text" placeholder="Поиск:">
+    <label class="search__label search__label--hidden" for="search-input-text">Поиск</label>
   </form>
   <a class="base-header__bookmarks" href="#">Закладки: 0</a>
   <a class="base-header__cart" href="#">Корзина: 0</a>
@@ -105,7 +106,7 @@
     <ul class="products-list">
       <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 9000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-1.jpg" alt="перфоратор BOSCH BFG 9000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">32500 Р.</p>
@@ -114,7 +115,7 @@
       </li>
       <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-2.jpg" alt="перфоратор BOSCH BFG 3000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">22500 Р.</p>
@@ -123,7 +124,7 @@
       </li>
       <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-3.jpg" alt="перфоратор BOSCH BFG 6000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">30500 Р.</p>
@@ -132,7 +133,7 @@
       </li>
       <li class="products-list__item product product--new">
         <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-4.jpg" alt="перфоратор BOSCH BFG 2000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price"></p>
@@ -147,28 +148,44 @@
     <a class="brands__all-link" href="#">все производители</a>
     <ul class="brands__list">
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-bosch.png" alt="логотип bosh" width="126" height="37">
+        </a>
       </li>
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-makita.png" alt="логотип makita" width="123" height="40">
+        </a>
       </li>
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-dewalt.png" alt="логотип dewalt" width="146" height="44">
+        </a>
       </li>
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-interskol.png" alt="логотип интерскол" width="200" height="88">
+        </a>
       </li>
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-hitachi.png" alt="логотип hitachi" width="169" height="31">
+        </a>
       </li>
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-lg.png" alt="логотип lg" width="121" height="73">
+        </a>
       </li>
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-aeg.png" alt="логотип aeg" width="151" height="96">
+        </a>
       </li>
       <li class="brands__item">
-        <img class="brands__logo" src="#" alt="#">
+        <a class="brands__link" href="#">
+          <img class="brands__logo" src="img/brands-metabo.png" alt="логотип metabo" width="204" height="69">
+        </a>
       </li>
     </ul>
   </section>
@@ -248,13 +265,13 @@
       Вы можете забрать товар сами,
       заехав в наш офис:
     </p>
-    <img class="contacts__map" src="#" alt="#">
+    <img class="contacts__map" src="img/map-min.jpg" alt="#" width="300" height="158">
     <a class="contacts__write-us-link">Вы можете забрать товар сами, заехав в наш офис:</a>
   </section>
 </main>
 <footer class="page__footer base-footer">
   <a class="base-footer__logo logo">
-    <img class="logo__image" src="#" alt="#">
+    <img class="logo__image" src="img/logo-footer.png" alt="логотип" width="138" height="23">
   </a>
 
   <ul class="site-nav">
@@ -316,7 +333,7 @@
 
 <section class="map-modal">
   <h2 class="map-modal__title">Мы тут</h2>
-  <img class="map-modal__image" src="#" alt="#">
+  <img class="map-modal__image" src="img/map-big.jpg" alt="карта" width="940" height="446">
   <button class="map-modal__close" type="button">Закрыть</button>
 </section>
 </body>

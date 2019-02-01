@@ -7,10 +7,11 @@
 <body class="page page--catalog">
 <header class="page__header base-header">
   <a class="base-header__logo logo" href="index.html">
-    <img class="logo__image" src="#" alt="#">
+    <img class="logo__image" src="img/logo.png" alt="логотип" width="110" height="18">
   </a>
   <form class="base-header__search search" method="get" action="#">
-    <input class="search__input" type="text" placeholder="Поиск:">
+    <input class="search__input" type="text" id="search-input-text" placeholder="Поиск:">
+    <label class="search__label search__label--hidden" for="search-input-text">Поиск</label>
   </form>
   <a class="base-header__bookmarks" href="#">Закладки: 0</a>
   <a class="base-header__cart" href="#">Корзина: 0</a>
@@ -91,11 +92,11 @@
 
   <section class="sort">
     <h2 class="sort__title">Сортировка:</h2>
-    <a class="sort__property-link" href="#">По цене</a>
-    <a class="sort__property-link" href="#">По типу</a>
-    <a class="sort__property-link" href="#">По функционалу</a>
-    <a class="sort__direction-link sort__direction-link--top" href="#"></a>
-    <a class="sort__direction-link sort__direction-link--bottom" href="#"></a>
+    <button class="sort__property-link" type="button">По цене</button>
+    <button class="sort__property-link" type="button">По типу</button>
+    <button class="sort__property-link" type="button">По функционалу</button>
+    <button class="sort__direction-link sort__direction-link--top" type="button"></button>
+    <button class="sort__direction-link sort__direction-link--bottom" type="button"></button>
   </section>
 
   <section class="catalog">
@@ -103,7 +104,7 @@
     <ul class="products-list">
       <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-2.jpg" alt="перфоратор BOSCH BFG 3000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">22500 Р.</p>
@@ -112,7 +113,7 @@
       </li>
       <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-3.jpg" alt="перфоратор BOSCH BFG 6000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">30500 Р.</p>
@@ -121,7 +122,7 @@
       </li>
       <li class="products-list__item product product--new">
         <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-4.jpg" alt="перфоратор BOSCH BFG 2000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price"></p>
@@ -130,34 +131,34 @@
       </li>
       <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-2.jpg" alt="перфоратор BOSCH BFG 3000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">22500 Р.</p>
         <a class="product__new-price" href="#">15500 Р.</a>
         <span class="product__extra-new">New</span>
       </li>
-      <li class="products-list__item product product--new">
+      <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-3.jpg" alt="перфоратор BOSCH BFG 6000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">30500 Р.</p>
         <a class="product__new-price" href="#">25500 Р.</a>
         <span class="product__extra-new">New</span>
       </li>
-      <li class="products-list__item product">
+      <li class="products-list__item product product--new">
         <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-4.jpg" alt="перфоратор BOSCH BFG 2000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price"></p>
         <a class="product__new-price" href="#">12500 Р.</a>
         <span class="product__extra-new">New</span>
       </li>
-      <li class="products-list__item product product--new">
+      <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-2.jpg" alt="перфоратор BOSCH BFG 3000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">22500 Р.</p>
@@ -166,16 +167,16 @@
       </li>
       <li class="products-list__item product">
         <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-3.jpg" alt="перфоратор BOSCH BFG 6000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price">30500 Р.</p>
         <a class="product__new-price" href="#">25500 Р.</a>
         <span class="product__extra-new">New</span>
       </li>
-      <li class="products-list__item product">
+      <li class="products-list__item product product--new">
         <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
-        <img class="product__photo" src="#" alt="#">
+        <img class="product__photo" src="img/perforator-4.jpg" alt="перфоратор BOSCH BFG 2000" width="218" height="170">
         <a class="product__buy-link" href="#"></a>
         <a class="product__bookmark-link" href="#"></a>
         <p class="product__old-price"></p>
@@ -207,7 +208,7 @@
 
 <footer class="page__footer base-footer">
   <a class="base-footer__logo logo" href="index.html">
-    <img class="logo__image" src="#" alt="#">
+    <img class="logo__image" src="img/logo-footer.png" alt="логотип" width="138" height="23">
   </a>
 
   <ul class="site-nav">
